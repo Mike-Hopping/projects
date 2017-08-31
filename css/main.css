@@ -1,0 +1,289 @@
+/***************
+CSS Normalize
+****************/
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+/***************
+Base Styles
+****************/
+body {
+    width: 100%;
+}
+body .container-fluid{
+    cursor: pointer;
+    padding:0;
+    
+}
+
+footer{
+    padding:10px 0px;
+    background-color:#f0f0f0;
+}
+
+/***************
+Layouts
+****************/
+/* Navbar */
+
+.navbar{
+    position: fixed !important;
+}
+nav {
+	height:50px;
+	width:100%;
+    font-size:18;
+	text-align: center;
+	background-color: #f0f0f0;
+    color:#000000;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.navbar-nav .nav-link {
+    color: #746eb5 !important;
+}
+
+.nav-link:hover {
+    color: #ffbd33 !important;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:visited {
+	color:#746eb5;
+}
+.navbar ul {
+    color: #f0f0f0;
+    margin: 0;
+}
+.navbar li {
+	display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar li a:hover {
+    color: #ffbd33;
+}         
+.active {
+    background-color:#FFBD33;
+    color: white;
+}
+
+.navbar .active li a:hover {
+    color: #746eb5;
+}
+
+.btn-outline-success {
+    color: #746eb5 !important;
+    border-color: #ffbd33 !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffbd33 !important;
+} 
+
+/* Main banner */
+.main-banner{
+    padding:0px;
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    display: flex;
+}
+
+/* Course Informations(First) */
+.dip{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.dip h5{
+    margin:0;
+    font-size: 28px;
+    font-weight: bold;
+}
+.dip-main{
+    background-color:rgba(0, 0, 0, 0.6);
+    color:#746eb5;
+    padding:23px 0px 20px 20px;
+    cursor: pointer;
+}
+.dip-showing{
+    display: flex;
+    cursor: pointer;
+}
+.dip-main ul{
+    display: none;
+    font-size:20px;
+    line-height: 30px;
+    list-style: disc;
+    margin:10px;
+    font-weight:bold;
+}
+.dip:hover ul{
+    display: block;
+}
+.dip-main p{
+    margin-top:10px;
+    display: none;
+    width:70%;
+    font-size: 20px;
+    line-height: 26px;
+}
+.dip:hover p{
+    display: block;
+}
+/* Footer */
+.main-footer{
+    display:flex;
+    justify-content: space-around;
+    background-color:#f0f0f0;
+    padding:20px 0px;
+    width:96%;
+    margin:10px auto;
+}
+.main-footer--first-section{
+    display: flex;
+    align-items: center;
+    flex:2;
+    justify-content: center;
+}
+.main-footer--first-section li{
+    display: flex;
+    padding:12px 0px;
+}
+.main-footer--first-section a{
+    font-size:20px;
+    color:#7461b5;
+}
+.first-footer-nav{
+    display: flex;
+    padding-right:30px;
+    border-right:1px solid darkgray;
+}
+.first-footer-nav ul{
+    padding-left:0;
+}
+
+.second-footer-nav{
+    padding:20px 30px 20px 0px;
+    border-right:1px solid darkgray;
+}
+.first-footer-nav{
+    
+}
+.main-footer--second-section{
+    display: flex;
+    width:10%;
+    justify-content: center;
+    color:#7461b5;
+}
+.main-footer--second-section h3{
+    margin-bottom:0;
+    margin-top:12px;
+    font-size:22px;
+}
+.main-footer--second-section p{
+    margin:0px;
+    font-size:17px;
+}
+.contact-us-details--infomation{
+    margin-top:0px;
+}
+.main-footer--third-section{
+    display: flex;
+    flex:2;
+    justify-content: center;
+}
+
+.main-footer--first-section li{
+    list-style: none;
+}
+
+.main-footer--first-section a{
+    text-decoration: none;
+}
+
+/***************
+Components/Modules
+****************/
+.footer-donation-button{
+    border-radius: 20px;
+    font-size:25px;
+    padding:20px 30px;
+    font-weight: bold;
+    width:400px;
+    border:none;
+    background-color: #7461b5;
+    color:#fff;
+}
+/***************
+Utils
+****************/
+/* Course section */
+.first-dip{
+    background-image:url(https://www.828web.com/wp-content/uploads/2014/03/website-design-for-small-businesses-website-development-boone-nc-high-quality-web-design-boone-nc.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.second-dip{
+    background-image:url(http://project1designs.co.uk/wp-content/uploads/2016/04/slide1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.third-dip{
+    background-image:url(http://www.byteorigin.com/wp-content/uploads/2015/08/social-mrkt.png);
+    background-size: cover;
+    background-position: center center;
+}
+.fourth-dip{
+    background-image:url(https://www.geneseo.edu/sites/default/files/styles/banner_image_2/public/banner-imgs-sites/art-history-banner-leonaredo.jpg?itok=XlJ4ub5h);
+    background-size: cover;
+    background-position: center center;
+}
+.fifth-dip{
+    background-image:url(http://www.altstudiotuscany.com/wp-content/uploads/2014/09/photography.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Main banner */
+.main-banner img{
+    width:100%;
+    margin-top: 50px;
+}
+/* Social media */
+.social-medias{
+    text-align: center;
+    margin-top:40px;
+}
+.social{
+    margin:0px 15px 0px 15px;
+    cursor: pointer;
+}
+.facebook{
+    border-radius: 24px;
+    height:70px;
+    width:70px;
+}
+.twitter{
+    border-radius: 26px;
+    height:70px;
+    width:70px;
+}
+.instagram{
+    border-radius: 26px;
+    height:70px;
+    width:70px;
+}
+.behance{
+    border-radius: 26px;
+    height:70px;
+    width:70px;
+}
+
+
