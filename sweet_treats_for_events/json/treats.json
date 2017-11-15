@@ -1,0 +1,18 @@
+{
+    "treats": [
+        {
+            "name": "Tip Top Trumpet",
+            "price": "2.80",
+            "category": "ice-cream"
+    }, {
+            "name": "Mars Bar",
+            "price": "3.20",
+            "category": "chocolate-bars"
+    }, {
+            "name": "Licorice Allsorts",
+            "price": "3.80",
+            "category": "candys"
+    }
+
+    ]
+}

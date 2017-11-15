@@ -1,0 +1,20 @@
+{
+    "events": [
+        {
+            "name": "Show Day",
+            "averageNoOfAttendees": "5000",
+            "transportFee": "5.00",
+            "labourFee": "10.00"
+        }, {
+            "name": "Christmas in the Park",
+            "averageNoOfAttendees": "15000",
+            "transportFee": "4.80",
+            "labourFee": "8.00"
+        }, {
+            "name": "Rythmn and Alps, Wanaka",
+            "averageNoOfAttendees": "10000",
+            "transportFee": "20.00",
+            "labourFee": "15.00"
+        }
+    ]
+}
